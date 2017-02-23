@@ -1,0 +1,12 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>
+            Prime Number Checker
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+    <input type="number"  placeholder="Enter a number" [(ngModel)]="inputNumber">
+    <ion-label>{{inputNumber>=0?result()==true?"is a prime number.":"is not a prime number.":"Please input a valid number"}}</ion-label>
+</ion-content>
